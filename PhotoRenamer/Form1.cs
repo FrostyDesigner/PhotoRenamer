@@ -29,6 +29,7 @@ namespace PhotoRenamer
             myPics.Add(@"C:\GitHub\PhotoRenamer\PhotoRenamer\myCDKview - Copy.jpg");
             myPics.Add(@"C:\GitHub\PhotoRenamer\PhotoRenamer\IMG_2750 - Copy.JPG");
             myPics.Add(@"C:\GitHub\PhotoRenamer\PhotoRenamer\surge-Amanda - Copy.jpg");
+            myPics.Add(@"C:\GitHub\PhotoRenamer\PhotoRenamer\surge-Amanda - Copy2.jpg");
 
             //string dirScan = @"C:\GitHub\PhotoRenamer\PhotoRenamer\files2.txt";
             string dirScan = tbDirScan.Text;
