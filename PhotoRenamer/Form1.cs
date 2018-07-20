@@ -55,7 +55,7 @@ namespace PhotoRenamer
                     try
                     { 
                         DateTime photoDate = GetDateTakenFromImage(item);
-
+                        //does the file even have a date time object?
                         if (!photoDate.Equals(DateTime.MinValue))
                         {
                             string yearMonth = photoDate.ToString("yyyy-MM");
@@ -77,7 +77,7 @@ namespace PhotoRenamer
                             if (!File.Exists(destFile))
                             {
                                 // To move a file or folder to a new location:
-                                System.IO.File.Copy(sourceFile, destFile);
+                                File.Copy(sourceFile, destFile);
                             }
 
                             // else rename the file and put it in the same directory
@@ -89,6 +89,8 @@ namespace PhotoRenamer
                                 System.IO.File.Copy(sourceFile, destFile);
                             }
                         }
+
+                        //if the file does not have date
                         else
                         {
                             string[] folders = directory.Split(Path.DirectorySeparatorChar);
